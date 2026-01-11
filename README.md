@@ -3,8 +3,6 @@
 ![Domain](https://img.shields.io/badge/Domain-Banking%20%26%20Finance-informational)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
 ![Accuracy](https://img.shields.io/badge/Model-XGBoost%20%7C%20SMOTE-brightgreen)
-![Data Source](https://img.shields.io/badge/Data-UCI%20Repository-00AEEF)
-![Imbalance](https://img.shields.io/badge/Imbalance-88%2F12%20Ratio-yellow)
 
 # PRODIGY_DS__-03
 ---
@@ -36,9 +34,20 @@ Telemarketing campaigns are resource-intensive. This project develops a predicti
 - **XGBoost (Champion Model):** Selected for its superior ROC-AUC performance and ability to handle non-linear relationships.
 - **Optimization:** Hyperparameter tuning conducted via `GridSearchCV` to maximize Average Precision.
 
-## 🚀 How to Use
-**Clone the repo:** ```bash
-   git clone [https://github.com/Temidayo23/PRODIGY_DS__-03.git](https://github.com/Temidayo23/PRODIGY_DS__-03
+## 💻 Installation
+
+```bash
+# Clone the repository
+git clone <https://github.com/Temidayo23/PRODIGY_DS__-03>
+cd world-bank-population-analysis
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch Jupyter Notebook
+jupyter notebook world_bank_Data_Analysed.ipynb
+
+```
 ----
 📊 Evaluation & Results
 Metric Focus: Prioritized ROC-AUC and F1-Score over accuracy due to the imbalanced nature of the dataset.
@@ -47,10 +56,16 @@ Performance: The XGBoost model effectively identifies potential subscribers, sig
 
 Top Predictors: duration (call length), poutcome (previous success), and age emerged as the most influential features.
 
-```text
-├── Bank_marketing-Analysed.ipynb   # Full Data Science Life Cycle notebook
-├── bank-full (1).csv               # Dataset (Portuguese Bank Marketing)
-└── README.md                       # Project documentation
+## 📂 Project Structure
+```                
+├── data/
+│   ├── bank-full.csv
+│   
+├── figures                        # visualizations 
+├── Bank_marketing-Analysed.ipynb  #  Main analysis notebook
+├── LICENSE.md                     # Authorization to reproduce
+├── README.md                      # Project Documentation
+└──requirements.txt               # Python dependencies  
 ```
 
 ### 🧪 Methodology
@@ -89,5 +104,5 @@ Feel free to reach out for collaborations or questions regarding this analysis!
 
 ### 📄 License
 MIT License Copyright (c) 2026 Adeyeye Blessing Temidayo
-
+Original Source - https://archive.ics.uci.edu/dataset/222/bank+marketing
 Disclaimer: This project was developed as part of a Data Science internship with Prodigy InfoTech.
